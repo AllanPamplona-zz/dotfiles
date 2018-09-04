@@ -1,0 +1,10 @@
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+!rofi.color-enabled: true
+!rofi.color-window: #8c8c8c, #000000, argb:27ffffff
+!rofi.color-normal: #8c8c8c, #ffffff, #8c8c8c, #3dce50, #000000
+!rofi.color-active: #8c8c8c, #0ef426, #8c8c8c, #349d3b, #000000
+!rofi.color-urgent: #8c8c8c, #cf2f2c, #8c8c8c, #e84b48, #ffffff
+rofi.font: Ubuntu Mono derivative Powerline 10
+rofi.theme: /home/saito/.config/rofi/onedark.rasi

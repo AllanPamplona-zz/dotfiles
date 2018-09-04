@@ -1,0 +1,111 @@
+{
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.8,
+    "type": "con",
+    "nodes": [
+{
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": 0.8,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1062,
+               "width": 1920,
+               "x": 0,
+               "y": 0
+            },
+            "name": "i3: Layout saving in i3 - Mozilla Firefox",
+            "percent": 0.8,
+            "swallows": [
+               {
+                "class": "^Firefox$",
+                "instance": "^Navigator$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "floating": "auto_off",
+            "layout": "splitv",
+            "percent": 0.2,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 0,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 768,
+                       "width": 1023,
+                       "x": 10,
+                       "y": 10
+                    },
+                    "name": "Turtl",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                        "class": "^Turtl$",
+                        "instance": "^crx_lbmpdaokhedfkjnleihfpnemckinodnf$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "pixel",
+                    "current_border_width": 0,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 650,
+                       "width": 350,
+                       "x": 785,
+                       "y": 215
+                    },
+                    "name": "Go For It!",
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                         "class": "^Com\\.github\\.jmoerman\\.go\\-for\\-it$",
+                        "instance": "^com\\.github\\.jmoerman\\.go\\-for\\-it$",
+                        "transient_for": "^$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        }
+    ]
+}
+,
+{
+    "border": "pixel",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 554,
+       "width": 814,
+       "x": 0,
+       "y": 0
+    },
+    "name": "~",
+    "percent": 0.2,
+    "swallows": [
+       {
+        "class": "^Termite$",
+        "instance": "^termite$",
+       // "title": "^\\~$",
+        "transient_for": "^$"
+       }
+    ],
+    "type": "con"
+}
+]
+}
