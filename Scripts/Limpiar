@@ -1,0 +1,5 @@
+#!/bin/bash
+echo “LIMPIEZA DEL SISTEMA”   
+#Limpieza de Caché 
+pacman -Scc
+pacman -Rns $(pacman -Qtdq)

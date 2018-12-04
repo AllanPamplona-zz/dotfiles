@@ -1,0 +1,25 @@
+# subir volumen
+"/bin/bash -c '/home/saito/Scripts/volUp'"
+   XF86AudioRaiseVolume
+# bajar volumen
+"/bin/bash -c '/home/saito/Scripts/volDown'"
+   XF86AudioLowerVolume
+
+"/bin/bash -c '/home/saito/Scripts/volMute'"
+    XF86AudioMute
+# brillo arriba
+
+"light -A 5"
+   XF86MonBrightnessUp
+# brillo abajo
+"light -U 5"
+   XF86MonBrightnessDown
+
+"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
+    XF86AudioPlay
+
+"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+    XF86AudioNext
+
+"dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+    XF86AudioBack
