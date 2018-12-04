@@ -1,0 +1,14 @@
+#!/bin/bash
+while true
+do
+    battery_level=`acpi -b | grep -P -o '[0-9]+(?=%)'`
+    charging=`cat /sys/class/power_supply/ADP1/online `
+    if [[ $battery_level -le 15 ]] && [[ $charging -eq 0 ]]; then
+       notify-send -u critical "Battery is lower 15%!" "${battery_level}%"    
+    fi
+    if [[ $battery_level -ge 100 ]] && [[ $charging -eq 1 ]]; then
+       notify-send "Battery is full"    
+    fi
+
+    sleep 60 # 300 seconds or 5 minutes
+done
