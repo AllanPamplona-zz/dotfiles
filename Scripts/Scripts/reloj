@@ -1,0 +1,3 @@
+#!/bin/bash
+time="$(date +"%T")"
+notify-send -t 5000 "$time \n$(date +%d), $(date +%B) $(date +%Y), $(date +%A)"

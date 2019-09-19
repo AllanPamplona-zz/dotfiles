@@ -31,56 +31,6 @@
                }
             ],
             "type": "con"
-        },
-        {
-            "border": "pixel",
-            "floating": "auto_off",
-            "layout": "splitv",
-            "percent": 0.2,
-            "type": "con",
-            "nodes": [
-                {
-                    "border": "pixel",
-                    "current_border_width": 0,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 768,
-                       "width": 1023,
-                       "x": 10,
-                       "y": 10
-                    },
-                    "name": "Turtl",
-                    "percent": 0.5,
-                    "swallows": [
-                       {
-                        "class": "^Turtl$",
-                        "instance": "^crx_lbmpdaokhedfkjnleihfpnemckinodnf$"
-                       }
-                    ],
-                    "type": "con"
-                },
-                {
-                    "border": "pixel",
-                    "current_border_width": 0,
-                    "floating": "auto_off",
-                    "geometry": {
-                       "height": 650,
-                       "width": 350,
-                       "x": 785,
-                       "y": 215
-                    },
-                    "name": "Go For It!",
-                    "percent": 0.5,
-                    "swallows": [
-                       {
-                         "class": "^Com\\.github\\.jmoerman\\.go\\-for\\-it$",
-                        "instance": "^com\\.github\\.jmoerman\\.go\\-for\\-it$",
-                        "transient_for": "^$"
-                       }
-                    ],
-                    "type": "con"
-                }
-            ]
         }
     ]
 }
@@ -99,8 +49,8 @@
     "percent": 0.2,
     "swallows": [
        {
-        "class": "^Termite$",
-        "instance": "^termite$",
+        "class": "^Terminator$",
+        "instance": "^terminator$",
        // "title": "^\\~$",
         "transient_for": "^$"
        }

@@ -1,0 +1,8 @@
+[Unit]
+After=dev-sys-devices-pci0000:00-0000:00:14.0-usb1-1\x2d1-1\x2d1:1.0-sound-card2.device 
+
+[Service]
+ExecStart=/home/saito/Scripts/plugg
+
+[Install]
+WantedBy=dev-sys-devices-pci0000:00-0000:00:14.0-usb1-1\x2d1-1\x2d1:1.0-sound-card2.device 

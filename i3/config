@@ -31,7 +31,7 @@ client.unfocused #2f343f #2f343f #ffffff #676E7D
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec terminator
 
 # kill focused window
 bindsym $mod+Shift+c kill
@@ -40,7 +40,6 @@ bindsym $mod+Shift+c kill
 bindsym $mod+d exec rofi -show run
 bindsym $mod+Tab exec rofi -show
 bindsym $mod+m exec morc_menu
-bindsym $mod+x exec sakura -e ranger
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -51,7 +50,6 @@ bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
 bindsym $mod+ntilde focus right
-
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -136,6 +134,7 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
+bindsym $mod+p exec "betterlockscreen --lock"
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -194,7 +193,7 @@ bar {
 	mode hide
         strip_workspace_numbers yes
 	hidden_state hide
-        status_command bumblebee-status -m caffeine brightness cpu nvidiagpu nic datetime battery spotify pasink pasource -p spotify.format="{artist} - {title}" time.format="%H:%M CW %V" nic.states="^down" date.format="%A, %d %b %Y" pulseaudio.autostart="true" -t solarized-powerline
+        status_command bumblebee-status -m brightness cpu nic datetime battery spotify pasink pasource -p spotify.format="{artist} - {title}" time.format="%H:%M CW %V" nic.states="^down" date.format="%A, %d %b %Y" pulseaudio.autostart="true" -t solarized-powerline
 
         colors {
 	    background $bg-color
@@ -205,12 +204,9 @@ bar {
 	    urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
     }
 }
+exec --no-startup-id "xrandr --output HDMI-0 --right-of eDP-1-1"
 exec --no-startup-id dunst
 exec --no-startup-id compton --config ~/.config/i3/compton.conf -b
 exec --no-startup-id spotify
-exec --no-startup-id "i3-msg 'workspace $workspace1; append_layout /home/saito/.config/i3/workspace1.json'"
 exec --no-startup-id firefox
-exec --no-startup-id termite
-exec --no-startup-id turtl
-exec --no-startup-id com.github.jmoerman.go-for-it 
 exec --no-startup-id battery_daemon

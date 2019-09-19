@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sleep  1 
+
+for user in `ps axc -o user,command | grep pulseaudio | cut -f1 -d' ' | sort | uniq`;
+do
+    export PULSE_RUNTIME_PATH=/run/user/$(id -u $user)/pulse/
+    su $user -c "pactl set-default-sink alsa_output.usb-Logitech_Logitech_USB_Headset-00.analog-stereo > /tmp/debu2.log 2>&1"
+done

@@ -1,5 +1,6 @@
-set -x MOON /home/saito/Desarrollo/develope/MoonBlock
 #set fish_function_path $fish_function_path "/usr/share/powerline/bindings/fish"
+set -gx PATH ~/.local/bin ~/.gem/ruby/2.6.0/bin $PATH
+
 #powerline-setup
 set -g theme_display_user yes
 set -g theme_display_hostname yes
