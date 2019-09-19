@@ -1,5 +1,6 @@
 execute pathogen#infect()
 set laststatus=2
+set expandtab
 filetype plugin indent on
 syntax on
 set number
@@ -9,10 +10,10 @@ augroup resCur
 augroup END
 set autoindent
 set expandtab
-set shiftwidth=4
+set shiftwidth=2
 set smartindent
 set smarttab
-set softtabstop=4
+set softtabstop=2
 colorscheme molokai
 let g:rehash256 = 1
 set t_Co=256
